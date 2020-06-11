@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="484edc15-fdd7-4afa-90fb-ff8e9a96156a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Game.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ConnectionBDD.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Arkanoid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Arkanoid.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/Arkanoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Arkanoid.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/Arkanoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Arkanoid.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprites/block1.1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprites/block1.2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprites/block1.3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprites/block2.1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprites/block2.2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprites/block2.3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprites/block3.1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprites/block3.2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprites/block3.3.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprites/block4.1.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprites/block4.2.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Sprites/block4.3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.csprojAssemblyReference.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +17,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ConnectionBDD.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Game.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Game.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
@@ -50,6 +31,8 @@
         <option value="$PROJECT_DIR$/Game.Designer.cs" />
         <option value="$PROJECT_DIR$/Program.cs" />
         <option value="$PROJECT_DIR$/Game.cs" />
+        <option value="$PROJECT_DIR$/Connection.cs" />
+        <option value="$PROJECT_DIR$/ConnectionBDD.cs" />
       </list>
     </option>
   </component>
@@ -108,6 +91,7 @@
       <workItem from="1591847054804" duration="946000" />
       <workItem from="1591848630315" duration="252000" />
       <workItem from="1591848913715" duration="3437000" />
+      <workItem from="1591908474887" duration="209000" />
     </task>
     <servers />
   </component>
