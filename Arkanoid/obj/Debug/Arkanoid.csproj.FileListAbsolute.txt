@@ -25,3 +25,4 @@ C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\A
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.csproj.CoreCompileInputs.cache
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.exe
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.pdb
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Game.resources

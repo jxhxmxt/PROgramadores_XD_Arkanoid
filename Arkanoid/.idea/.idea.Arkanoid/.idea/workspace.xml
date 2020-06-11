@@ -2,17 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="484edc15-fdd7-4afa-90fb-ff8e9a96156a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Blocks.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Game.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Arkanoid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Arkanoid.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/Arkanoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Arkanoid.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Debug/Arkanoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Arkanoid.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprites/block1.1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprites/block1.2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprites/block1.3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprites/block2.1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprites/block2.2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprites/block2.3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprites/block3.1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprites/block3.2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprites/block3.3.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprites/block4.1.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprites/block4.2.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprites/block4.3.PNG" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +37,9 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Game.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Blocks.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -31,6 +47,9 @@
       <list>
         <option value="$PROJECT_DIR$/Form1.cs" />
         <option value="$PROJECT_DIR$/Blocks.cs" />
+        <option value="$PROJECT_DIR$/Game.Designer.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/Game.cs" />
       </list>
     </option>
   </component>
@@ -45,6 +64,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager">
     <configuration name="Arkanoid" type="DotNetProject" factoryName=".NET Project">
@@ -79,6 +104,10 @@
       <workItem from="1589513683373" duration="749000" />
       <workItem from="1591475138130" duration="313000" />
       <workItem from="1591475540049" duration="42000" />
+      <workItem from="1591846777597" duration="247000" />
+      <workItem from="1591847054804" duration="946000" />
+      <workItem from="1591848630315" duration="252000" />
+      <workItem from="1591848913715" duration="3437000" />
     </task>
     <servers />
   </component>
@@ -101,22 +130,22 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1591475454841">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1591852358716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591475454841" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1591475454841">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1591852358716" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1591852358716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591475454841" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1591475454841">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1591852358716" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1591852358716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591475454841" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1591475454841">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1591852358716" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1591852358716">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591475454841" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1591852358716" />
     <state x="479" y="102" key="RiderGenerateDialog" timestamp="1591475549340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
