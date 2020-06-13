@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Zair Alexander Ortíz\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Zair Alexander Ortíz\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Arkanoid.-1017758463.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid" t="IncludeRecursive">
+    <e p="C:\Users\Stanley\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Stanley\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_Arkanoid.-1442208095.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid" t="IncludeRecursive">
       <e p="App.config" t="Include" />
       <e p="Arkanoid.csproj" t="IncludeRecursive" />
       <e p="Arkanoid.sln" t="IncludeFlat" />
@@ -27,6 +27,9 @@
         <e p="Settings.Designer.cs" t="Include" />
         <e p="Settings.settings" t="Include" />
       </e>
+      <e p="UsersNames.cs" t="Include" />
+      <e p="UsersNames.Designer.cs" t="Include" />
+      <e p="UsersNames.resx" t="Include" />
     </e>
   </component>
 </project>
