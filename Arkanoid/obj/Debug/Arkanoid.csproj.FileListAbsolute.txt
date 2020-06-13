@@ -61,3 +61,28 @@ C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkano
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.csproj.CopyComplete
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.exe
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.pdb
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Npgsql.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Buffers.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Memory.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Text.Json.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.ValueTuple.dll
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Npgsql.pdb
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Npgsql.xml
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Buffers.xml
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Memory.xml
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Text.Json.xml
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.ValueTuple.xml
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.exe.config
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.UsersNames.resources
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.csproj.CopyComplete
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Arkanoid.resources

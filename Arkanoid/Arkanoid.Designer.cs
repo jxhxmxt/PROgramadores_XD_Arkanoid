@@ -2,14 +2,14 @@
 
 namespace Arkanoid
 {
-    partial class Game
+    partial class Arkanoid
     {
-        /// <summary>
+        /// <summary> 
         /// Required designer variable.
         /// </summary>
         private IContainer components = null;
 
-        /// <summary>
+        /// <summary> 
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -23,7 +23,7 @@ namespace Arkanoid
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Component Designer generated code
 
         /// <summary>
         /// Required method for Designer support - do not modify
@@ -31,22 +31,29 @@ namespace Arkanoid
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.Timer1Game = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // Game
+            // Timer1Game
+            // 
+            this.Timer1Game.Tick += new System.EventHandler(this.Timer1Game_Tick);
+            // 
+            // Arkanoid
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(956, 534);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.MaximizeBox = false;
-            this.Name = "Game";
-            this.Text = "Game";
-            this.Load += new System.EventHandler(this.Game_Load);
+            this.Name = "Arkanoid";
+            this.Size = new System.Drawing.Size(807, 444);
+            this.Load += new System.EventHandler(this.Arkanoid_Load);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Arkanoid_MouseClick);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Arkanoid_MouseMove);
             this.ResumeLayout(false);
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer Timer1Game;
     }
 }
