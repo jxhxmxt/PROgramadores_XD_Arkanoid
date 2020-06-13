@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="484edc15-fdd7-4afa-90fb-ff8e9a96156a" name="Default Changelist" comment="" />
+    <list default="true" id="484edc15-fdd7-4afa-90fb-ff8e9a96156a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Arkanoid.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Arkanoid.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,7 +101,8 @@
       <workItem from="1592024178752" duration="304000" />
       <workItem from="1592024506258" duration="3895000" />
       <workItem from="1592028454281" duration="462000" />
-      <workItem from="1592029368103" duration="266000" />
+      <workItem from="1592029368103" duration="867000" />
+      <workItem from="1592031501033" duration="39000" />
     </task>
     <servers />
   </component>

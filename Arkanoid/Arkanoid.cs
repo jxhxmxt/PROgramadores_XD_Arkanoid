@@ -67,7 +67,7 @@ namespace Arkanoid
 
                     //se setean los golpes a los cuales se destruiran los bloques
                     if(i == 0) BlocksGame[i, j].hits = 3;
-                    else if(i == 1 || i == 2) BlocksGame[i, j].hits = 1;
+                    else if(i == 1 || i == 2) BlocksGame[i, j].hits = 2;
                     else BlocksGame[i, j].hits = 1;
 
                     //tamaño de los bloques
