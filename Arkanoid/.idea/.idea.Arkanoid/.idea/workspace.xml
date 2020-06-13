@@ -1,25 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="484edc15-fdd7-4afa-90fb-ff8e9a96156a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Arkanoid.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DataGame.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Arkanoid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Arkanoid.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Arkanoid.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/Arkanoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Arkanoid.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/Debug/Arkanoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/Arkanoid.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.csproj.GenerateResource.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/Arkanoid.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/Arkanoid.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="484edc15-fdd7-4afa-90fb-ff8e9a96156a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,6 +98,7 @@
       <workItem from="1592024178752" duration="304000" />
       <workItem from="1592024506258" duration="3895000" />
       <workItem from="1592028454281" duration="462000" />
+      <workItem from="1592029368103" duration="266000" />
     </task>
     <servers />
   </component>
