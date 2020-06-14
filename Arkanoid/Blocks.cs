@@ -6,7 +6,7 @@ namespace Arkanoid
     {
         public int hits { get; set; }
         public bool destroyed { get; set; }
-
+		//instancia bloque
         public Blocks() : base(){}
     }
 }
