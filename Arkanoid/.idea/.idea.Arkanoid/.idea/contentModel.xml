@@ -12,7 +12,9 @@
       <e p="Arkanoid.sln" t="IncludeFlat" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Blocks.cs" t="Include" />
-      <e p="Controlador" t="Include" />
+      <e p="Controlador" t="Include">
+        <e p="UsuariosxPuntaje.cs" t="Include" />
+      </e>
       <e p="DataGame.cs" t="Include" />
       <e p="Form1.cs" t="Include" />
       <e p="Form1.Designer.cs" t="Include" />
@@ -23,7 +25,9 @@
       <e p="Modelo" t="Include">
         <e p="ConnectionBDD.cs" t="Include" />
         <e p="Puntuacion.cs" t="Include" />
+        <e p="PuntuacionDAO.cs" t="Include" />
         <e p="Usuario.cs" t="Include" />
+        <e p="UsuarioDAO.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
