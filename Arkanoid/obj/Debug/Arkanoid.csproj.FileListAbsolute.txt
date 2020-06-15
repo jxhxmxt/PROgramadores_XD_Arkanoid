@@ -109,7 +109,7 @@ C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkano
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.ValueTuple.xml
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.exe.config
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Arkanoid.resources
-C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Form1.resources
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Game.resources
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.UsersNames.resources
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.csproj.CopyComplete
+C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Menu.resources

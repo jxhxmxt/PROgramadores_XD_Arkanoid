@@ -5,10 +5,7 @@
     <e p="C:\Users\Administrator\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Arkanoid.-2118933563.00" t="ExcludeRecursive" />
     <e p="C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid" t="IncludeRecursive">
       <e p="App.config" t="Include" />
-      <e p="Arkanoid.cs" t="Include" />
       <e p="Arkanoid.csproj" t="IncludeRecursive" />
-      <e p="Arkanoid.Designer.cs" t="Include" />
-      <e p="Arkanoid.resx" t="Include" />
       <e p="Arkanoid.sln" t="IncludeFlat" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Blocks.cs" t="Include" />
@@ -16,12 +13,6 @@
         <e p="UsuariosxPuntaje.cs" t="Include" />
       </e>
       <e p="DataGame.cs" t="Include" />
-      <e p="Form1.cs" t="Include" />
-      <e p="Form1.Designer.cs" t="Include" />
-      <e p="Form1.resx" t="Include" />
-      <e p="Game.cs" t="Include" />
-      <e p="Game.Designer.cs" t="Include" />
-      <e p="Game.resx" t="Include" />
       <e p="Modelo" t="Include">
         <e p="ConnectionBDD.cs" t="Include" />
         <e p="Puntuacion.cs" t="Include" />
@@ -43,6 +34,17 @@
       <e p="UsersNames.cs" t="Include" />
       <e p="UsersNames.Designer.cs" t="Include" />
       <e p="UsersNames.resx" t="Include" />
+      <e p="Vista" t="Include">
+        <e p="Arkanoid.cs" t="Include" />
+        <e p="Arkanoid.Designer.cs" t="Include" />
+        <e p="Arkanoid.resx" t="Include" />
+        <e p="Game.cs" t="Include" />
+        <e p="Game.Designer.cs" t="Include" />
+        <e p="Game.resx" t="Include" />
+        <e p="Menu.cs" t="Include" />
+        <e p="Menu.Designer.cs" t="Include" />
+        <e p="Menu.resx" t="Include" />
+      </e>
     </e>
   </component>
 </project>

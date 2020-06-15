@@ -124,7 +124,7 @@ namespace Arkanoid
             if (ball.Bottom > Height)
             {
                 Timer1Game.Stop();
-                Application.Exit();
+                ParentForm.Close();
             }
 
             //colision con laterales de la pantalla

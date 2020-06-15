@@ -10,16 +10,17 @@ using System.Windows.Forms;
 
 namespace Arkanoid
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
         }
 
         private void buttonPlay_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            Game ventana = new Game();
+            ventana.ShowDialog();
         }
 
         private void buttonScore_Click(object sender, EventArgs e)

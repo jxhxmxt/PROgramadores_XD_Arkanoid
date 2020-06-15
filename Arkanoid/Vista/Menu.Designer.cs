@@ -1,6 +1,6 @@
 ﻿namespace Arkanoid
 {
-    partial class Form1
+    partial class Menu
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources =
-                new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+                new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonPlay = new System.Windows.Forms.Button();
             this.buttonScore = new System.Windows.Forms.Button();

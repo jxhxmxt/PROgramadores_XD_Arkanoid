@@ -88,27 +88,9 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Arkanoid.cs">
-          <SubType>UserControl</SubType>
-        </Compile>
-        <Compile Include="Arkanoid.Designer.cs">
-          <DependentUpon>Arkanoid.cs</DependentUpon>
-        </Compile>
         <Compile Include="Blocks.cs" />
         <Compile Include="Controlador\UsuariosxPuntaje.cs" />
         <Compile Include="DataGame.cs" />
-        <Compile Include="Form1.cs">
-            <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="Form1.Designer.cs">
-            <DependentUpon>Form1.cs</DependentUpon>
-        </Compile>
-        <Compile Include="Game.cs">
-          <SubType>Form</SubType>
-        </Compile>
-        <Compile Include="Game.Designer.cs">
-          <DependentUpon>Game.cs</DependentUpon>
-        </Compile>
         <Compile Include="Modelo\ConnectionBDD.cs" />
         <Compile Include="Modelo\Puntuacion.cs" />
         <Compile Include="Modelo\PuntuacionDAO.cs" />
@@ -122,15 +104,24 @@
         <Compile Include="UsersNames.Designer.cs">
           <DependentUpon>UsersNames.cs</DependentUpon>
         </Compile>
-        <EmbeddedResource Include="Arkanoid.resx">
+        <Compile Include="Vista\Arkanoid.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Vista\Arkanoid.Designer.cs">
           <DependentUpon>Arkanoid.cs</DependentUpon>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Form1.resx">
-          <DependentUpon>Form1.cs</DependentUpon>
-        </EmbeddedResource>
-        <EmbeddedResource Include="Game.resx">
+        </Compile>
+        <Compile Include="Vista\Menu.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Vista\Menu.Designer.cs">
+          <DependentUpon>Menu.cs</DependentUpon>
+        </Compile>
+        <Compile Include="Vista\Game.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Vista\Game.Designer.cs">
           <DependentUpon>Game.cs</DependentUpon>
-        </EmbeddedResource>
+        </Compile>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -142,6 +133,15 @@
         </Compile>
         <EmbeddedResource Include="UsersNames.resx">
           <DependentUpon>UsersNames.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Vista\Arkanoid.resx">
+          <DependentUpon>Arkanoid.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Vista\Menu.resx">
+          <DependentUpon>Menu.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Vista\Game.resx">
+          <DependentUpon>Game.cs</DependentUpon>
         </EmbeddedResource>
         <None Include="packages.config" />
         <None Include="Properties\Settings.settings">
