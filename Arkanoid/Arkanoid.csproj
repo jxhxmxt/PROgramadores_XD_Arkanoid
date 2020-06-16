@@ -88,9 +88,9 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Blocks.cs" />
+        <Compile Include="Controlador\Blocks.cs" />
+        <Compile Include="Controlador\DataGame.cs" />
         <Compile Include="Controlador\UsuariosxPuntaje.cs" />
-        <Compile Include="DataGame.cs" />
         <Compile Include="Modelo\ConnectionBDD.cs" />
         <Compile Include="Modelo\Puntuacion.cs" />
         <Compile Include="Modelo\PuntuacionDAO.cs" />

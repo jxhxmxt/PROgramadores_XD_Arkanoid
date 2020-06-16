@@ -7,14 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Arkanoid.Controlador;
+using Arkanoid.Modelo;
 
 namespace Arkanoid
 {
     public partial class Menu : Form
     {
+        private Usuario _usuario;
+        private List<Puntuacion> Puntuaciones;
+        private List<UsuariosxPuntaje> _usuariosxPuntajes;
         public Menu()
         {
             InitializeComponent();
+        }
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            Puntuaciones = PuntuacionDAO.getLista();
+            _usuariosxPuntajes = PuntuacionDAO.getTop(Puntuaciones);
         }
 
         private void buttonPlay_Click(object sender, EventArgs e)

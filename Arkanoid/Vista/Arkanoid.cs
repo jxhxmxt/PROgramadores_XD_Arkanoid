@@ -13,6 +13,7 @@ namespace Arkanoid
         
         private delegate void ActionsBall();
         private readonly ActionsBall MovementBall;
+        private int puntaje = 0;
         public Action GameOver;
 
         public Arkanoid()
@@ -175,6 +176,9 @@ namespace Arkanoid
                         }
 
                         DataGame.dirY = -DataGame.dirY;
+                        
+                        //Se suma un punto por cada hit
+                        puntaje++;
 
                         return;
                     }
@@ -188,6 +192,7 @@ namespace Arkanoid
             ball.Left += DataGame.dirX;
             ball.Top += DataGame.dirY;
         }
+        
 
         //dar click en la pantalla para comenzar el juego
         private void Arkanoid_MouseClick(object sender, MouseEventArgs e)

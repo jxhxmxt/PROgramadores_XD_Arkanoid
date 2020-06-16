@@ -8,11 +8,11 @@
       <e p="Arkanoid.csproj" t="IncludeRecursive" />
       <e p="Arkanoid.sln" t="IncludeFlat" />
       <e p="bin" t="ExcludeRecursive" />
-      <e p="Blocks.cs" t="Include" />
       <e p="Controlador" t="Include">
+        <e p="Blocks.cs" t="Include" />
+        <e p="DataGame.cs" t="Include" />
         <e p="UsuariosxPuntaje.cs" t="Include" />
       </e>
-      <e p="DataGame.cs" t="Include" />
       <e p="Modelo" t="Include">
         <e p="ConnectionBDD.cs" t="Include" />
         <e p="Puntuacion.cs" t="Include" />
