@@ -10,10 +10,17 @@ namespace Arkanoid
     {
         private Blocks[,] BlocksGame;
         private PictureBox player, ball;
+        private Panel score;
+        private Label lblRemainingLives, lblScore;
+        
+        // Para trabajar con picicturebox + label
+        private PictureBox heart;
+
+        // Para trabajar con n picturebox
+        private PictureBox[] heartArray;
         
         private delegate void ActionsBall();
         private readonly ActionsBall MovementBall;
-        private int puntaje = 0;
         public Action GameOver;
 
         public Arkanoid()
@@ -26,6 +33,8 @@ namespace Arkanoid
 
         private void Arkanoid_Load(object sender, EventArgs e)
         {
+            ScorePanel();
+            
             //picturebox de la plataforma del jugador
             player = new PictureBox();
             player.Width = 150;
@@ -49,7 +58,6 @@ namespace Arkanoid
             Controls.Add(player);
 
             LoadBloks();
-            Timer1Game.Start();
         }
         
         private void LoadBloks()
@@ -79,7 +87,7 @@ namespace Arkanoid
                     
                     //posicion de los bloques
                     BlocksGame[i, j].Left = j * (bkWidth + 1);
-                    BlocksGame[i, j].Top = i * bkHeight;
+                    BlocksGame[i, j].Top = i * bkHeight + score.Height + 1;
                     
                     //imagen del bloque
                     BlocksGame[i,j].BackgroundImage = Image.FromFile("../../../Sprites/Block" + (i + 1) + ".png");
@@ -94,7 +102,7 @@ namespace Arkanoid
         //movimiento del cursor
         private void Arkanoid_MouseMove(object sender, MouseEventArgs e)
         {
-            if (!DataGame.StartGame)
+            if (!DataGame.startGame)
             {
                 if (e.X < (Width - player.Width))
                 {
@@ -113,7 +121,7 @@ namespace Arkanoid
         //timer de movimiento de la bola
         private void Timer1Game_Tick(object sender, EventArgs e)
         {
-            if(!DataGame.StartGame)
+            if(!DataGame.startGame)
                 return;
             
             MovementBall?.Invoke();
@@ -124,8 +132,24 @@ namespace Arkanoid
         {
             if (ball.Bottom > Height)
             {
+                DataGame.lives--;
+                DataGame.startGame = false;
                 Timer1Game.Stop();
-                ParentForm.Close();
+                
+                RepositionElements();
+                UpdateElements();
+
+                if (DataGame.lives == 0)
+                {    //termina el juego
+                    Timer1Game.Stop();
+                    
+                    MessageBox.Show("Te has quedado sin vidas! Tu puntaje: " + DataGame.score,
+                        "Perdiste", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    
+                    DataGame.RestartGame();
+                    ParentForm.Close();
+                }
+                
             }
 
             //colision con laterales de la pantalla
@@ -155,6 +179,9 @@ namespace Arkanoid
                     //colision con los bloques
                     if (BlocksGame[i, j] != null && ball.Bounds.IntersectsWith(BlocksGame[i, j].Bounds))
                     {
+                        //se hace el calculo de los puntos
+                        DataGame.score += (BlocksGame[i, j].hits * (5 - i));
+                        
                         BlocksGame[i, j].hits--;
 
                         if (BlocksGame[i, j].hits == 0)
@@ -165,21 +192,28 @@ namespace Arkanoid
                         else
                         {
                             //se cambian los sprites cuando hay colision con los bloques
-                            if(i == 2)
+                            if (i == 2)
+                            {
                                 BlocksGame[i, j].BackgroundImage = Image.FromFile("../../../Sprites/broked3.png");
-                            if(i == 1)
+                            }
+                            if (i == 1)
+                            {
                                 BlocksGame[i, j].BackgroundImage = Image.FromFile("../../../Sprites/broked2.png");
-                            if(i == 0 && BlocksGame[i,j].hits > 1) 
+                            }
+                            if (i == 0 && BlocksGame[i, j].hits > 1)
+                            {
                                 BlocksGame[i, j].BackgroundImage = Image.FromFile("../../../Sprites/broked1.png");
-                            if(i == 0 && BlocksGame[i,j].hits == 1) 
+                            }
+                            if (i == 0 && BlocksGame[i, j].hits == 1)
+                            {
                                 BlocksGame[i, j].BackgroundImage = Image.FromFile("../../../Sprites/broked11.png");
+                            }
+
                         }
 
                         DataGame.dirY = -DataGame.dirY;
                         
-                        //Se suma un punto por cada hit
-                        puntaje++;
-
+                        lblScore.Text = "Score: " + DataGame.score;
                         return;
                     }
                 }
@@ -193,11 +227,126 @@ namespace Arkanoid
             ball.Top += DataGame.dirY;
         }
         
-
         //dar click en la pantalla para comenzar el juego
         private void Arkanoid_MouseClick(object sender, MouseEventArgs e)
         {
-            DataGame.StartGame = true;
+            DataGame.startGame = true;
+            Timer1Game.Start();
         }
+        
+        //panel de puntajes
+         private void ScorePanel()
+        {
+            // Instanciar panel
+            score = new Panel();
+
+            // Setear elementos del panel
+            score.Width = Width;
+            score.Height = (int)(Height * 0.07);
+
+            score.Top = score.Left = 0;
+
+            score.BackColor = Color.Gray;
+
+            #region Label + PictureBox
+            // Instanciar pb
+            heart = new PictureBox();
+
+            heart.Height = heart.Width = score.Height;
+
+            heart.Top = 0;
+            heart.Left = 20;
+
+            heart.BackgroundImage = Image.FromFile("../../../Sprites/HeartFill.png");
+            heart.BackgroundImageLayout = ImageLayout.Stretch;
+            #endregion
+
+            #region N cantidad de PictureBox
+            heartArray = new PictureBox[DataGame.lives];
+
+            for(int i = 0; i < DataGame.lives; i++)
+            {
+                // Instanciacion de pb
+                heartArray[i] = new PictureBox();
+
+                heartArray[i].Height = heartArray[i].Width = score.Height;
+
+                heartArray[i].BackgroundImage = Image.FromFile("../../../Sprites/HeartFill.png");
+                heartArray[i].BackgroundImageLayout = ImageLayout.Stretch;
+
+                heartArray[i].Top = 0;
+
+                if (i == 0)
+                    // corazones[i].Left = 20;
+                    heartArray[i].Left = score.Width / 2;
+                else
+                {
+                    heartArray[i].Left = heartArray[i - 1].Right + 5;
+                }
+            }
+            #endregion
+
+            // Instanciar labels
+            lblRemainingLives = new Label();
+            lblScore = new Label();
+
+            // Setear elementos de los labels
+            lblRemainingLives.ForeColor = lblScore.ForeColor = Color.White;
+
+            //se setean los valores de los lbl
+            lblRemainingLives.Text = "x " + DataGame.lives;
+            lblScore.Text = "Score: " + DataGame.score;
+
+            lblRemainingLives.Font = lblScore.Font = new Font("Microsoft YaHei", 24F);
+            lblRemainingLives.TextAlign = lblScore.TextAlign = ContentAlignment.MiddleCenter;
+
+            lblRemainingLives.Left = heart.Right + 5;
+            lblScore.Left = Width - 250;
+            lblScore.Width = 250;
+
+            lblRemainingLives.Height = lblScore.Height = score.Height;
+
+            score.Controls.Add(heart);
+            score.Controls.Add(lblRemainingLives);
+            score.Controls.Add(lblScore);
+
+            foreach(var pb in heartArray)
+            {
+                score.Controls.Add(pb);
+            }
+
+            Controls.Add(score);
+        }
+         
+         //se van actualizando los corazones en pantalla y las vidas
+         private void UpdateElements()
+         {
+             lblRemainingLives.Text = "x " + DataGame.lives;
+
+             if (DataGame.lives == 1)
+             {    //cuando le queda una vida se pone un gif de un corazon parpadeando
+                 heartArray[DataGame.lives - 1].Image = Image.FromFile("../../../Sprites/HeartAnimated.gif");
+                 heartArray[DataGame.lives - 1].SizeMode = PictureBoxSizeMode.StretchImage;
+             }
+
+             if (DataGame.lives == 0)
+             {    //cuando terminan las vidas se quita el gif y se pone la img normal
+                 heartArray[DataGame.lives].Image = Image.FromFile("../../../Sprites/HeartEmpty.png");
+                 heartArray[DataGame.lives].SizeMode = PictureBoxSizeMode.StretchImage;
+             }
+             
+             //a los demas picturebox que no son la posicion 1 y 0, se les pone img normales
+             heartArray[DataGame.lives].BackgroundImage = Image.FromFile("../../../Sprites/HeartEmpty.png");
+             
+             heartArray[DataGame.lives] = null;
+         }
+         
+         //se colocan en las posiciones por defecto la bola y el jugador al perder una vida
+         private void RepositionElements()
+         {
+             player.Left = (Width / 2) - (player.Width / 2);
+             ball.Top = player.Top - ball.Height - 30;
+             ball.Left = player.Left + (player.Width / 2) - (ball.Width / 2);
+         }
     }
 }
