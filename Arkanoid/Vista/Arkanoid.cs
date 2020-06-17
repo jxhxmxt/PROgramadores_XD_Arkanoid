@@ -193,22 +193,13 @@ namespace Arkanoid
                         {
                             //se cambian los sprites cuando hay colision con los bloques
                             if (i == 2)
-                            {
                                 BlocksGame[i, j].BackgroundImage = Image.FromFile("../../../Sprites/broked3.png");
-                            }
                             if (i == 1)
-                            {
                                 BlocksGame[i, j].BackgroundImage = Image.FromFile("../../../Sprites/broked2.png");
-                            }
                             if (i == 0 && BlocksGame[i, j].hits > 1)
-                            {
                                 BlocksGame[i, j].BackgroundImage = Image.FromFile("../../../Sprites/broked1.png");
-                            }
                             if (i == 0 && BlocksGame[i, j].hits == 1)
-                            {
                                 BlocksGame[i, j].BackgroundImage = Image.FromFile("../../../Sprites/broked11.png");
-                            }
-
                         }
 
                         DataGame.dirY = -DataGame.dirY;

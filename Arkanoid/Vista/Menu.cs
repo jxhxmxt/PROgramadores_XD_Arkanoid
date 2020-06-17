@@ -20,6 +20,10 @@ namespace Arkanoid
         public Menu()
         {
             InitializeComponent();
+            
+            Height = ClientSize.Height;
+            Width = ClientSize.Width;
+            WindowState = FormWindowState.Maximized;
         }
         private void Menu_Load(object sender, EventArgs e)
         {
