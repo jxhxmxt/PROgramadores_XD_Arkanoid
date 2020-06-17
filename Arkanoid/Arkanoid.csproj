@@ -33,6 +33,9 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Arkanoid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>bin\Debug\Arkanoid.exe</HintPath>
+        </Reference>
         <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
           <HintPath>packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
           <Private>True</Private>
@@ -122,6 +125,12 @@
         <Compile Include="Vista\Game.Designer.cs">
           <DependentUpon>Game.cs</DependentUpon>
         </Compile>
+        <Compile Include="Vista\ScoreUsers.cs">
+          <SubType>Form</SubType>
+        </Compile>
+        <Compile Include="Vista\ScoreUsers.Designer.cs">
+          <DependentUpon>ScoreUsers.cs</DependentUpon>
+        </Compile>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -143,6 +152,9 @@
         <EmbeddedResource Include="Vista\Game.resx">
           <DependentUpon>Game.cs</DependentUpon>
         </EmbeddedResource>
+        <EmbeddedResource Include="Vista\ScoreUsers.resx">
+          <DependentUpon>ScoreUsers.cs</DependentUpon>
+        </EmbeddedResource>
         <None Include="packages.config" />
         <None Include="Properties\Settings.settings">
             <Generator>SettingsSingleFileGenerator</Generator>
@@ -156,6 +168,9 @@
     </ItemGroup>
     <ItemGroup>
         <None Include="App.config" />
+    </ItemGroup>
+    <ItemGroup>
+      <Content Include="Resources\thumb_1920_416627.jpg" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

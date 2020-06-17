@@ -26,7 +26,6 @@ C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\A
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.pdb
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Game.resources
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Arkanoid.exe.config
-C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Arkanoid.exe
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Arkanoid.pdb
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Npgsql.dll
@@ -51,7 +50,6 @@ C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkano
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\System.ValueTuple.xml
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.csprojAssemblyReference.cache
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.exe.config
-C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Form1.resources
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Game.resources
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Properties.Resources.resources
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.UsersNames.resources
@@ -113,3 +111,6 @@ C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkano
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.csproj.CopyComplete
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Menu.resources
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Menu.resources
+C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Arkanoid.resources
+C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Menu.resources
+C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.ScoreUsers.resources
