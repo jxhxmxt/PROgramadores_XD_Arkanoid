@@ -16,7 +16,6 @@ C:\Users\Stanley\Documents\githubb\proyecto\PROgramadores_XD_Arkanoid\Arkanoid\o
 C:\Users\Stanley\Documents\githubb\proyecto\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.pdb
 C:\Users\Stanley\Documents\githubb\proyecto\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Form1.resources
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Arkanoid.exe.config
-C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Arkanoid.exe
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Arkanoid.pdb
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.csprojAssemblyReference.cache
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Properties.Resources.resources
@@ -114,3 +113,4 @@ C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\A
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Arkanoid.resources
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Menu.resources
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.ScoreUsers.resources
+C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.ScoreUsers.resources

@@ -104,7 +104,7 @@ namespace Arkanoid
         {
             if (!DataGame.startGame)
             {
-                if (e.X < (Width - player.Width))
+                if (e.X < (Width - player.Width) + 5)
                 {
                     player.Left = e.X;
                     ball.Left = player.Left + (player.Width / 2) - (ball.Width / 2);
@@ -121,9 +121,24 @@ namespace Arkanoid
         //timer de movimiento de la bola
         private void Timer1Game_Tick(object sender, EventArgs e)
         {
+            //empieza el contador de lo que durara en el nuevo tamaño la plataforma
+            if (DataGame.timeDurationStart)
+            {
+                DataGame.resizingTimeDuration += 100;
+
+                //el tiempo acaba (10 seg) se reinicia el tam del player y se reinician las variables involucradas
+                if (DataGame.resizingTimeDuration == 10000)
+                {
+                    DataGame.resizingTimeDuration = 0;
+                    DataGame.timeDurationStart = false;
+                    DataGame.normalPlayer = true;
+                    player.Width = 150;
+                }
+            }
+            
             if(!DataGame.startGame)
                 return;
-            
+  
             MovementBall?.Invoke();
         }
         
@@ -154,23 +169,19 @@ namespace Arkanoid
 
             //colision con laterales de la pantalla
             if (ball.Left < 0 || ball.Right > Width)
-            {
                 DataGame.dirX = -DataGame.dirX;
-                
-            }
-
+ 
             //colision con la parte Top de la pantalla
-            if (ball.Top < 0)
+            if (ball.Top < score.Top + score.Height)
             {
                 DataGame.dirY = -DataGame.dirY;
                 return;
             }
-                
+
             //colision con la plataforma
             if (ball.Bounds.IntersectsWith(player.Bounds))
-            {
                 DataGame.dirY = -DataGame.dirY;
-            }
+            
 
             for (int i = 3; i >= 0; i--)
             {
@@ -180,7 +191,13 @@ namespace Arkanoid
                     if (BlocksGame[i, j] != null && ball.Bounds.IntersectsWith(BlocksGame[i, j].Bounds))
                     {
                         //se hace el calculo de los puntos
-                        DataGame.score += (BlocksGame[i, j].hits * (5 - i));
+                        DataGame.score += (BlocksGame[i, j].hits * (DataGame.RandomScore() - i));
+                        
+                        //random para ver si cambia de tamaño la plataforma
+                        Random rand = new Random();
+                        int random = rand.Next(1, 101);
+
+                        ChangeSize(random);
                         
                         BlocksGame[i, j].hits--;
 
@@ -336,8 +353,39 @@ namespace Arkanoid
          private void RepositionElements()
          {
              player.Left = (Width / 2) - (player.Width / 2);
-             ball.Top = player.Top - ball.Height - 30;
+             ball.Top = player.Top - ball.Height - 25;
              ball.Left = player.Left + (player.Width / 2) - (ball.Width / 2);
          }
+
+        //cambiarle el tamaño a la plataforma del jugador aleatoriamente
+        private void ChangeSize(int random)
+        {
+            
+            if(random <= 10  || random >= 90 && DataGame.normalPlayer)
+            {
+                //segun el random se cambia de tamaño la plataforma para mas dificultad del juego
+                if (random <= 10 && !DataGame.smallPlayer)
+                {
+                    player.Width = 100;
+                    
+                    DataGame.smallPlayer = true;
+                    DataGame.bigPlayer = false;
+                }
+                    
+                if (random >= 90 && !DataGame.bigPlayer)
+                {
+                    player.Width = 200;
+                    
+                    DataGame.bigPlayer = true;
+                    DataGame.smallPlayer = false;
+                }
+
+                //bandera de que empezara el contador del tiempo que durara en el nuevo tamaño la plataforma
+                DataGame.timeDurationStart = true;
+                
+                DataGame.normalPlayer = false;
+            }
+    
+        }
     }
 }
