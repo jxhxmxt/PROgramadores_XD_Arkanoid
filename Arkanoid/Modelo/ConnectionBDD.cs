@@ -8,8 +8,8 @@ namespace Arkanoid
         private static string cadenaC = "Server=127.0.0.1;" +
                                         "Port=5432;" +
                                         "User Id=postgres;" +
-                                        "Password=alex00355519;" +
-                                        "Database=ProyectoArkanoid";
+                                        "Password=uca;" +
+                                        "Database=Proyecto";
 
         public static DataTable ExecuteQuery(string query)
         {

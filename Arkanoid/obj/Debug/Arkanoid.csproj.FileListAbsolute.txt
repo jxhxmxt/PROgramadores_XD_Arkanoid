@@ -1,5 +1,4 @@
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Arkanoid.exe.config
-C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Arkanoid.exe
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\bin\Debug\Arkanoid.pdb
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.csprojAssemblyReference.cache
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Properties.Resources.resources
@@ -114,3 +113,4 @@ C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkano
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.Menu.resources
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.ScoreUsers.resources
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.ScoreUsers.resources
+C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.ScoreUsers.resources

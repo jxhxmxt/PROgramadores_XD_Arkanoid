@@ -39,7 +39,8 @@ namespace Arkanoid
 
         private void buttonScore_Click(object sender, EventArgs e)
         {
-            throw new System.NotImplementedException();
+            ScoreUsers ventana = new ScoreUsers();
+            ventana.ShowDialog();
         }
 
         private void buttonOut_Click(object sender, EventArgs e)
