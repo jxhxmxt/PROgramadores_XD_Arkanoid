@@ -41,6 +41,9 @@
         <e p="Arkanoid.cs" t="Include" />
         <e p="Arkanoid.Designer.cs" t="Include" />
         <e p="Arkanoid.resx" t="Include" />
+        <e p="CustomTextBox.cs" t="Include" />
+        <e p="CustomTextBox.Designer.cs" t="Include" />
+        <e p="CustomTextBox.resx" t="Include" />
         <e p="Game.cs" t="Include" />
         <e p="Game.Designer.cs" t="Include" />
         <e p="Game.resx" t="Include" />

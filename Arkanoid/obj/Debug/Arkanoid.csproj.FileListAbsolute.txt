@@ -114,3 +114,4 @@ C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkano
 C:\Users\Stanley\Documents\githubb\proyecto_poo\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.ScoreUsers.resources
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.ScoreUsers.resources
 C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.ScoreUsers.resources
+C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid\obj\Debug\Arkanoid.CustomTextBox.resources

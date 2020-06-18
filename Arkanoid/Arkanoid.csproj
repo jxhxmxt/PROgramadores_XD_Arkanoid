@@ -113,6 +113,12 @@
         <Compile Include="Vista\Arkanoid.Designer.cs">
           <DependentUpon>Arkanoid.cs</DependentUpon>
         </Compile>
+        <Compile Include="Vista\CustomTextBox.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Vista\CustomTextBox.Designer.cs">
+          <DependentUpon>CustomTextBox.cs</DependentUpon>
+        </Compile>
         <Compile Include="Vista\Menu.cs">
           <SubType>Form</SubType>
         </Compile>
@@ -145,6 +151,9 @@
         </EmbeddedResource>
         <EmbeddedResource Include="Vista\Arkanoid.resx">
           <DependentUpon>Arkanoid.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Vista\CustomTextBox.resx">
+          <DependentUpon>CustomTextBox.cs</DependentUpon>
         </EmbeddedResource>
         <EmbeddedResource Include="Vista\Menu.resx">
           <DependentUpon>Menu.cs</DependentUpon>

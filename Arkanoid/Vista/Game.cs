@@ -10,6 +10,9 @@ namespace Arkanoid
     public partial class Game : Form
     {
         private Arkanoid gameArkanoid;
+        
+        //Se le solicitara un nombre de usuario al jugador
+        private string nombreUsuario;
 
         public Game()
         {
@@ -22,6 +25,7 @@ namespace Arkanoid
         
         private void Game_Load(object sender, EventArgs e)
         {
+            
             gameArkanoid = new Arkanoid();
             gameArkanoid.Dock = DockStyle.Fill;
             gameArkanoid.Height = Height;
