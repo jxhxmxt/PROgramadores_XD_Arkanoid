@@ -22,13 +22,19 @@ namespace Arkanoid
         private delegate void ActionsBall();
         private readonly ActionsBall MovementBall;
         public Action GameOver;
+        
+        //Usuario jugando
+        private Usuario unUsuario;
 
-        public Arkanoid()
+        public Arkanoid(Usuario usu)
         {
             InitializeComponent();
 
             MovementBall = CollisionsBall;
             MovementBall += MoveBall;
+
+            //asignando usuario a variable global
+            unUsuario = UsuarioDAO.getUsuario(usu);
         }
 
         private void Arkanoid_Load(object sender, EventArgs e)
@@ -160,6 +166,9 @@ namespace Arkanoid
                     
                     MessageBox.Show("Te has quedado sin vidas! Tu puntaje: " + DataGame.score,
                         "Perdiste", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    
+                    //Se almacena el score en la base de datos
+                    saveScore();
                     
                     DataGame.RestartGame();
                     ParentForm.Close();
@@ -385,7 +394,11 @@ namespace Arkanoid
                 
                 DataGame.normalPlayer = false;
             }
-    
+        }
+
+        private void saveScore()
+        {
+            PuntuacionDAO.addPuntuacion(unUsuario.Id_u, DataGame.score);
         }
     }
 }

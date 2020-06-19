@@ -49,5 +49,12 @@ namespace Arkanoid.Modelo
 
             return lista;
         }
+        
+        public static void addPuntuacion(int id, int puntaje)
+                {
+                    string sql = String.Format("insert into puntuacion(id_u, puntaje) values({0}, {1});", id, puntaje);
+        
+                    ConnectionBDD.ExecuteNonQuery(sql);
+                }
     }
 }

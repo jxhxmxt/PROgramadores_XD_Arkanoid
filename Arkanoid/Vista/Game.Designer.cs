@@ -57,12 +57,13 @@ namespace Arkanoid
             this.txbUsu.Dock = System.Windows.Forms.DockStyle.Top;
             this.txbUsu.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold,
                 System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-            this.txbUsu.ForeColor = System.Drawing.Color.White;
+            this.txbUsu.ForeColor = System.Drawing.Color.Transparent;
             this.txbUsu.Location = new System.Drawing.Point(0, 139);
             this.txbUsu.Name = "txbUsu";
             this.txbUsu.Size = new System.Drawing.Size(836, 50);
             this.txbUsu.TabIndex = 2;
             this.txbUsu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txbUsu.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txbUsu_KeyDown);
             // 
             // Game
             // 
