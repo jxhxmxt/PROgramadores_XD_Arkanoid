@@ -40,7 +40,14 @@ namespace Arkanoid
         private void buttonScore_Click(object sender, EventArgs e)
         {
             ScoreUsers ventana = new ScoreUsers();
-            ventana.ShowDialog();
+            ventana.CloseAction = () =>
+            {
+                Show(); 
+                
+            };
+            
+            ventana.Show();
+            Hide();
         }
 
         private void buttonOut_Click(object sender, EventArgs e)

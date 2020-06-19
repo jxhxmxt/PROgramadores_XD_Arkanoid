@@ -37,8 +37,20 @@ namespace Arkanoid
             unUsuario = UsuarioDAO.getUsuario(usu);
         }
 
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams handleParam = base.CreateParams;
+                handleParam.ExStyle |= 0x02000000;    // WS_EX_COMPOSITED
+                return handleParam;
+            }
+        }
+
         private void Arkanoid_Load(object sender, EventArgs e)
         {
+            BackColor = Color.Transparent;
+            
             ScorePanel();
             
             //picturebox de la plataforma del jugador
