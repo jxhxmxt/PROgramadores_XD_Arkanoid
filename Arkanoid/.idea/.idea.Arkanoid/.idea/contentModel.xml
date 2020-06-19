@@ -11,8 +11,12 @@
       <e p="Controlador" t="Include">
         <e p="Blocks.cs" t="Include" />
         <e p="DataGame.cs" t="Include" />
+        <e p="ExistPlayersExeption.cs" t="Include" />
+        <e p="GameOverException.cs" t="Include" />
         <e p="NicknameEmptyException.cs" t="Include" />
+        <e p="NicknameLongException.cs" t="Include" />
         <e p="UsuariosxPuntaje.cs" t="Include" />
+        <e p="WinGameException.cs" t="Include" />
       </e>
       <e p="Modelo" t="Include">
         <e p="ConnectionBDD.cs" t="Include" />
