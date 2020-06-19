@@ -93,6 +93,7 @@
     <ItemGroup>
         <Compile Include="Controlador\Blocks.cs" />
         <Compile Include="Controlador\DataGame.cs" />
+        <Compile Include="Controlador\NicknameEmptyException.cs" />
         <Compile Include="Controlador\UsuariosxPuntaje.cs" />
         <Compile Include="Modelo\ConnectionBDD.cs" />
         <Compile Include="Modelo\Puntuacion.cs" />
