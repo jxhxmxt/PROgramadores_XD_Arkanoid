@@ -91,27 +91,21 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Controlador\Blocks.cs" />
+        <Compile Include="Controlador\ConnectionBDD.cs" />
         <Compile Include="Controlador\DataGame.cs" />
         <Compile Include="Controlador\ExistPlayersExeption.cs" />
         <Compile Include="Controlador\GameOverException.cs" />
         <Compile Include="Controlador\NicknameEmptyException.cs" />
         <Compile Include="Controlador\NicknameLongException.cs" />
-        <Compile Include="Controlador\UsuariosxPuntaje.cs" />
+        <Compile Include="Controlador\PuntuacionDAO.cs" />
+        <Compile Include="Controlador\UsuarioDAO.cs" />
         <Compile Include="Controlador\WinGameException.cs" />
-        <Compile Include="Modelo\ConnectionBDD.cs" />
+        <Compile Include="Modelo\Blocks.cs" />
         <Compile Include="Modelo\Puntuacion.cs" />
-        <Compile Include="Modelo\PuntuacionDAO.cs" />
         <Compile Include="Modelo\Usuario.cs" />
-        <Compile Include="Modelo\UsuarioDAO.cs" />
+        <Compile Include="Modelo\UsuariosxPuntaje.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
-        <Compile Include="UsersNames.cs">
-          <SubType>UserControl</SubType>
-        </Compile>
-        <Compile Include="UsersNames.Designer.cs">
-          <DependentUpon>UsersNames.cs</DependentUpon>
-        </Compile>
         <Compile Include="Vista\Arkanoid.cs">
           <SubType>UserControl</SubType>
         </Compile>
@@ -142,6 +136,12 @@
         <Compile Include="Vista\ScoreUsers.Designer.cs">
           <DependentUpon>ScoreUsers.cs</DependentUpon>
         </Compile>
+        <Compile Include="Vista\UsersNames.cs">
+          <SubType>UserControl</SubType>
+        </Compile>
+        <Compile Include="Vista\UsersNames.Designer.cs">
+          <DependentUpon>UsersNames.cs</DependentUpon>
+        </Compile>
         <EmbeddedResource Include="Properties\Resources.resx">
             <Generator>ResXFileCodeGenerator</Generator>
             <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -151,9 +151,6 @@
             <AutoGen>True</AutoGen>
             <DependentUpon>Resources.resx</DependentUpon>
         </Compile>
-        <EmbeddedResource Include="UsersNames.resx">
-          <DependentUpon>UsersNames.cs</DependentUpon>
-        </EmbeddedResource>
         <EmbeddedResource Include="Vista\Arkanoid.resx">
           <DependentUpon>Arkanoid.cs</DependentUpon>
         </EmbeddedResource>
@@ -168,6 +165,9 @@
         </EmbeddedResource>
         <EmbeddedResource Include="Vista\ScoreUsers.resx">
           <DependentUpon>ScoreUsers.cs</DependentUpon>
+        </EmbeddedResource>
+        <EmbeddedResource Include="Vista\UsersNames.resx">
+          <DependentUpon>UsersNames.cs</DependentUpon>
         </EmbeddedResource>
         <None Include="packages.config" />
         <None Include="Properties\Settings.settings">

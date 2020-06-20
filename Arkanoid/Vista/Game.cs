@@ -34,39 +34,46 @@ namespace Arkanoid
             //Se almacena el usuario en Base y se pasa al userControl Arkanoid
             if (e.KeyCode == Keys.Enter)
             {
-                unUsuario.Nombre = txbUsu.Text;
-                if (unUsuario.Nombre.Length > 100)
-                {
-                    NicknameLongException longException = new NicknameLongException("Nickname no puede contener" +
-                                                                                    "mas de 100 caracteres");
-                    MessageBox.Show(longException.Message);
-                }
-                else if(unUsuario.Nombre.Length == 0)
-                {
-                    NicknameEmptyException emptyException = new NicknameEmptyException("Nombre no puede estar" +
-                                                                                       "vacio");
-                    MessageBox.Show(emptyException.Message);
-                }
-                else
-                {
-                    try
-                    {
-                        UsuarioDAO.addUsuario(unUsuario);
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Nickname ya existe, bienvenido");
-                    }
+                try
+                {    
+                    unUsuario.Nombre = txbUsu.Text;
                     
-                    label1.Hide();
-                    txbUsu.Hide();
+                    if (unUsuario.Nombre.Length > 10)
+                        throw new NicknameLongException("Nickname no puede contener mas de 10 caracteres");
+                    if (unUsuario.Nombre.Length == 0)
+                        throw  new NicknameEmptyException("Nombre no puede estar vacio");
                     
-                    gameArkanoid = new Arkanoid(unUsuario);
-                    gameArkanoid.Dock = DockStyle.Fill;
-                    gameArkanoid.Height = Height;
-                    gameArkanoid.Width = Width;
-                    Controls.Add(gameArkanoid);
+                    //se verifica si el usuario existe o no
+                    if(UsuarioDAO.ExistPlayer(unUsuario))
+                        throw new ExistPlayersExeption("Bienvenido nuevamente " + unUsuario.Nombre);
+                    
+                    UsuarioDAO.AddPlayer(unUsuario);
+
+                    MessageBox.Show("Gracias por registrarte a Arkanoid");
+
                 }
+                catch (NicknameLongException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                catch (NicknameEmptyException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                catch (ExistPlayersExeption ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                
+                label1.Hide();
+                txbUsu.Hide();
+                
+                //se instancia el UC del juego
+                gameArkanoid = new Arkanoid(unUsuario);
+                gameArkanoid.Dock = DockStyle.Fill;
+                gameArkanoid.Height = Height;
+                gameArkanoid.Width = Width;
+                Controls.Add(gameArkanoid);  
             }
         }
     }

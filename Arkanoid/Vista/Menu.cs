@@ -46,8 +46,8 @@ namespace Arkanoid
                 
             };
             
-            ventana.Show();
-            Hide();
+            ventana.ShowDialog();
+            //Hide();
         }
 
         private void buttonOut_Click(object sender, EventArgs e)

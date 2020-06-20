@@ -35,7 +35,7 @@ namespace Arkanoid
             MovementBall += MoveBall;
 
             //asignando usuario a variable global
-            unUsuario = UsuarioDAO.getUsuario(usu);
+            unUsuario = UsuarioDAO.GetPlayer(usu);
         }
 
         protected override CreateParams CreateParams

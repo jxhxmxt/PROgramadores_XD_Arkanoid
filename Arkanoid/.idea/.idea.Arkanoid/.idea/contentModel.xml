@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Administrator\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Administrator\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Arkanoid.-2118933563.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Administrator\Documents\workspaces\POO\PROgramadores_XD_Arkanoid\Arkanoid" t="IncludeRecursive">
+    <e p="C:\Users\Zair Alexander Ortíz\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Zair Alexander Ortíz\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_Arkanoid.-1017758463.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\Arkanoid" t="IncludeRecursive">
       <e p="App.config" t="Include" />
       <e p="Arkanoid.csproj" t="IncludeRecursive" />
       <e p="Arkanoid.sln" t="IncludeFlat" />
       <e p="bin" t="ExcludeRecursive" />
       <e p="Controlador" t="Include">
-        <e p="Blocks.cs" t="Include" />
+        <e p="ConnectionBDD.cs" t="Include" />
         <e p="DataGame.cs" t="Include" />
         <e p="ExistPlayersExeption.cs" t="Include" />
         <e p="GameOverException.cs" t="Include" />
         <e p="NicknameEmptyException.cs" t="Include" />
         <e p="NicknameLongException.cs" t="Include" />
-        <e p="UsuariosxPuntaje.cs" t="Include" />
+        <e p="PuntuacionDAO.cs" t="Include" />
+        <e p="UsuarioDAO.cs" t="Include" />
         <e p="WinGameException.cs" t="Include" />
       </e>
       <e p="Modelo" t="Include">
-        <e p="ConnectionBDD.cs" t="Include" />
+        <e p="Blocks.cs" t="Include" />
         <e p="Puntuacion.cs" t="Include" />
-        <e p="PuntuacionDAO.cs" t="Include" />
         <e p="Usuario.cs" t="Include" />
-        <e p="UsuarioDAO.cs" t="Include" />
+        <e p="UsuariosxPuntaje.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
@@ -39,9 +39,6 @@
       <e p="Resources" t="Include">
         <e p="thumb_1920_416627.jpg" t="Include" />
       </e>
-      <e p="UsersNames.cs" t="Include" />
-      <e p="UsersNames.Designer.cs" t="Include" />
-      <e p="UsersNames.resx" t="Include" />
       <e p="Vista" t="Include">
         <e p="Arkanoid.cs" t="Include" />
         <e p="Arkanoid.Designer.cs" t="Include" />
@@ -58,6 +55,9 @@
         <e p="ScoreUsers.cs" t="Include" />
         <e p="ScoreUsers.Designer.cs" t="Include" />
         <e p="ScoreUsers.resx" t="Include" />
+        <e p="UsersNames.cs" t="Include" />
+        <e p="UsersNames.Designer.cs" t="Include" />
+        <e p="UsersNames.resx" t="Include" />
       </e>
     </e>
   </component>
