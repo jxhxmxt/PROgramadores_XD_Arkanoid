@@ -22,8 +22,7 @@ namespace Arkanoid
         
         private delegate void ActionsBall();
         private readonly ActionsBall MovementBall;
-        public Action GameOver;
-        
+
         //Usuario jugando
         private Usuario unUsuario;
 
@@ -173,28 +172,27 @@ namespace Arkanoid
                 RepositionElements();
                 UpdateElements();
 
-                if (DataGame.lives == 0)
-                {    //termina el juego
-                    Timer1Game.Stop();
+                try
+                {
+                    if (DataGame.lives == 0)
+                    {    //termina el juego
+                        Timer1Game.Stop();
+                        
+                        //Se almacena el score en la base de datos
+                        SaveScore();
+                        
+                        DataGame.RestartGame();
+                        ParentForm.Close();
                     
-                    MessageBox.Show("Te has quedado sin vidas! Tu puntaje: " + DataGame.score,
-                        "Perdiste", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    
-                    //Se almacena el score en la base de datos
-                    try
-                    {
-                        saveScore();
+                        throw new GameOverException("Te has quedado sin vidas!");
                     }
-                    catch (GameOverException ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                    
-                    
-                    DataGame.RestartGame();
-                    ParentForm.Close();
                 }
-                
+                catch (GameOverException ex)
+                {
+                    MessageBox.Show(ex.Message,"Fin del juego",MessageBoxButtons.OK,
+                        MessageBoxIcon.Error);
+                }
+       
             }
 
             //colision con laterales de la pantalla
@@ -221,7 +219,7 @@ namespace Arkanoid
                     if (BlocksGame[i, j] != null && ball.Bounds.IntersectsWith(BlocksGame[i, j].Bounds))
                     {
                         //se hace el calculo de los puntos
-                        DataGame.score += (BlocksGame[i, j].hits * (DataGame.RandomScore() - i));
+                        DataGame.score += (BlocksGame[i, j].hits * (5 - i));
                         
                         //random para ver si cambia de tamaño la plataforma
                         Random rand = new Random();
@@ -235,6 +233,8 @@ namespace Arkanoid
                         {
                             Controls.Remove(BlocksGame[i, j]);
                             BlocksGame[i, j] = null;
+
+                            DataGame.remainingBlock--;
                         }
                         else
                         {
@@ -252,6 +252,32 @@ namespace Arkanoid
                         DataGame.dirY = -DataGame.dirY;
                         
                         lblScore.Text = "Score: " + DataGame.score;
+
+                        try
+                        {
+                            if (DataGame.remainingBlock <= 0)
+                            {
+                                //termina el juego
+                                Timer1Game.Stop();
+                        
+                                //Se almacena el score en la base de datos
+                                SaveScore();
+
+                                //reinicia la variable en la cantidad de bloques que hay para otra partida
+                                DataGame.remainingBlock = 40;
+                                
+                                DataGame.RestartGame();
+                                ParentForm.Close();
+                    
+                                throw new WinGameException("Has ganado el juego. Felicidades!");
+                            }
+                        }
+                        catch (WinGameException ex)
+                        {
+                            MessageBox.Show(ex.Message,"Fin del juego",MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                        }
+                        
                         return;
                     }
                 }
@@ -417,7 +443,7 @@ namespace Arkanoid
             }
         }
 
-        private void saveScore()
+        private void SaveScore()
         {
             PuntuacionDAO.addPuntuacion(unUsuario.Id_u, DataGame.score);
         }

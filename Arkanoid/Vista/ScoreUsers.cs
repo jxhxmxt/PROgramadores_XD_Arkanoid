@@ -26,6 +26,9 @@ namespace Arkanoid
 
         private void ScoreUsers_Load(object sender, EventArgs e)
         {
+            BackgroundImage = Image.FromFile("../../../Sprites/BackgroundTop.png");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            
             LoadScores();
         }
 

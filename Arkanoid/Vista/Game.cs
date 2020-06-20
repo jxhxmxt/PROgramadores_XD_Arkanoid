@@ -26,6 +26,9 @@ namespace Arkanoid
         
         private void Game_Load(object sender, EventArgs e)
         {
+            BackgroundImage = Image.FromFile("../../../Sprites/BackgroundGame.png");
+            BackgroundImageLayout = ImageLayout.Stretch;
+            
             unUsuario = new Usuario();
         }
 
@@ -35,7 +38,7 @@ namespace Arkanoid
             if (e.KeyCode == Keys.Enter)
             {
                 try
-                {    
+                {   //se toma el nombre del usuario del textbox
                     unUsuario.Nombre = txbUsu.Text;
                     
                     if (unUsuario.Nombre.Length > 10)
