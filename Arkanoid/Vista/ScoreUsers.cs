@@ -31,13 +31,21 @@ namespace Arkanoid
 
         private void LoadScores()
         {
-            puntuaciones = PuntuacionDAO.getLista();
-            var playersList = PuntuacionDAO.getTop(puntuaciones);
+            try
+            {
+                puntuaciones = PuntuacionDAO.getLista();
+                listaPuntajes = PuntuacionDAO.getTop(puntuaciones);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            
             players = new Label[10,2];
 
             int sampleTop = label1.Bottom + 25, sampleLeft = 10;
 
-            for (int i = 0; i < playersList.Count; i++)
+            for (int i = 0; i < listaPuntajes.Count; i++)
             {
                 for (int j = 0; j < 2; j++)
                 {
@@ -45,12 +53,12 @@ namespace Arkanoid
 
                     if (j == 0)
                     {
-                        players[i, j].Text = playersList[i].Nombre;
+                        players[i, j].Text = listaPuntajes[i].Nombre;
                         players[i, j].Left = sampleLeft;
                     }
                     else
                     {
-                        players[i, j].Text = playersList[i].Puntaje.ToString();
+                        players[i, j].Text = listaPuntajes[i].Puntaje.ToString();
                         players[i, j].Left = Width / 2 + sampleLeft;
                     }
 

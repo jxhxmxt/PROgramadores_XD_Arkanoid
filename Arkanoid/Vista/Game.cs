@@ -35,23 +35,38 @@ namespace Arkanoid
             if (e.KeyCode == Keys.Enter)
             {
                 unUsuario.Nombre = txbUsu.Text;
-                label1.Hide();
-                txbUsu.Hide();
-
-                try
+                if (unUsuario.Nombre.Length > 100)
                 {
-                    UsuarioDAO.addUsuario(unUsuario);
+                    NicknameLongException longException = new NicknameLongException("Nickname no puede contener" +
+                                                                                    "mas de 100 caracteres");
+                    MessageBox.Show(longException.Message);
                 }
-                catch (Exception exception)
+                else if(unUsuario.Nombre.Length == 0)
                 {
-                    Console.WriteLine(exception);
+                    NicknameEmptyException emptyException = new NicknameEmptyException("Nombre no puede estar" +
+                                                                                       "vacio");
+                    MessageBox.Show(emptyException.Message);
                 }
-                
-                gameArkanoid = new Arkanoid(unUsuario);
-                gameArkanoid.Dock = DockStyle.Fill;
-                gameArkanoid.Height = Height;
-                gameArkanoid.Width = Width;
-                Controls.Add(gameArkanoid);
+                else
+                {
+                    try
+                    {
+                        UsuarioDAO.addUsuario(unUsuario);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Nickname ya existe, bienvenido");
+                    }
+                    
+                    label1.Hide();
+                    txbUsu.Hide();
+                    
+                    gameArkanoid = new Arkanoid(unUsuario);
+                    gameArkanoid.Dock = DockStyle.Fill;
+                    gameArkanoid.Height = Height;
+                    gameArkanoid.Width = Width;
+                    Controls.Add(gameArkanoid);
+                }
             }
         }
     }

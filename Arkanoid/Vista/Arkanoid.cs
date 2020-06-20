@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using Arkanoid.Controlador;
 using Arkanoid.Modelo;
 
 namespace Arkanoid
@@ -180,7 +181,15 @@ namespace Arkanoid
                         "Perdiste", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     
                     //Se almacena el score en la base de datos
-                    saveScore();
+                    try
+                    {
+                        saveScore();
+                    }
+                    catch (GameOverException ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    
                     
                     DataGame.RestartGame();
                     ParentForm.Close();
