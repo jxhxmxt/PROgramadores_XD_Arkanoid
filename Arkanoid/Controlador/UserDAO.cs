@@ -4,12 +4,12 @@ using System.Data;
 
 namespace Arkanoid.Modelo
 {
-    public class UsuarioDAO
+    public class UserDAO
     {
 
-        public static bool ExistPlayer(Usuario user)
+        public static bool ExistPlayer(User user)
         {
-            string sql = String.Format("select * from usuario where nombre = '{0}';", user.Nombre);
+            string sql = String.Format("select * from usuario where nombre = '{0}';", user.Name);
             
             DataTable dt = ConnectionBDD.ExecuteQuery(sql);
 
@@ -18,26 +18,26 @@ namespace Arkanoid.Modelo
             
             return false;
         }
-        public static Usuario GetPlayer(Usuario usu)
+        public static User GetPlayer(User usu)
         {
-            string sql = String.Format("select * from usuario where nombre = '{0}';", usu.Nombre);
+            string sql = String.Format("select * from usuario where nombre = '{0}';", usu.Name);
         
             DataTable dt = ConnectionBDD.ExecuteQuery(sql);
                     
-            Usuario usuario = new Usuario();
+            User user_ = new User();
             foreach (DataRow fila in dt.Rows)
             {
-                usuario.Id_u = Convert.ToInt32(fila[0].ToString());
-                usuario.Nombre = fila[1].ToString();
+                user_.Id_u = Convert.ToInt32(fila[0].ToString());
+                user_.Name = fila[1].ToString();
             }
         
-            return usuario;
+            return user_;
         }
 
-        public static void AddPlayer(Usuario u)
+        public static void AddPlayer(User u)
         {
             string sql = String.Format("insert into usuario(nombre) values('{0}');",
-                u.Nombre);
+                u.Name);
             
             ConnectionBDD.ExecuteNonQuery(sql);
         }

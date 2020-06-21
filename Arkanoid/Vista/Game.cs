@@ -12,7 +12,7 @@ namespace Arkanoid
         private Arkanoid gameArkanoid;
         
         //Se le solicitara un nombre de usuario al jugador
-        private Usuario unUsuario;
+        private User anUser;
        
 
         public Game()
@@ -29,7 +29,7 @@ namespace Arkanoid
             BackgroundImage = Image.FromFile("../../../Sprites/BackgroundGame.png");
             BackgroundImageLayout = ImageLayout.Stretch;
             
-            unUsuario = new Usuario();
+            anUser = new User();
         }
 
         private void txbUsu_KeyDown(object sender, KeyEventArgs e)
@@ -39,18 +39,18 @@ namespace Arkanoid
             {
                 try
                 {   //se toma el nombre del usuario del textbox
-                    unUsuario.Nombre = txbUsu.Text;
+                    anUser.Name = txbUsu.Text;
                     
-                    if (unUsuario.Nombre.Length > 10)
+                    if (anUser.Name.Length > 10)
                         throw new NicknameLongException("Nickname no puede contener mas de 10 caracteres");
-                    if (unUsuario.Nombre.Length == 0)
+                    if (anUser.Name.Length == 0)
                         throw  new NicknameEmptyException("Nombre no puede estar vacio");
                     
                     //se verifica si el usuario existe o no
-                    if(UsuarioDAO.ExistPlayer(unUsuario))
-                        throw new ExistPlayersExeption("Bienvenido nuevamente " + unUsuario.Nombre);
+                    if(UserDAO.ExistPlayer(anUser))
+                        throw new ExistPlayersExeption("Bienvenido nuevamente " + anUser.Name);
                     
-                    UsuarioDAO.AddPlayer(unUsuario);
+                    UserDAO.AddPlayer(anUser);
 
                     MessageBox.Show("Gracias por registrarte a Arkanoid");
 
@@ -72,7 +72,7 @@ namespace Arkanoid
                 txbUsu.Hide();
                 
                 //se instancia el UC del juego
-                gameArkanoid = new Arkanoid(unUsuario);
+                gameArkanoid = new Arkanoid(anUser);
                 gameArkanoid.Dock = DockStyle.Fill;
                 gameArkanoid.Height = Height;
                 gameArkanoid.Width = Width;

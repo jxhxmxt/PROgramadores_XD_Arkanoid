@@ -14,9 +14,9 @@ namespace Arkanoid
 {
     public partial class Menu : Form
     {
-        private Usuario _usuario;
-        private List<Puntuacion> Puntuaciones;
-        private List<UsuariosxPuntaje> _usuariosxPuntajes;
+        private User _user;
+        private List<Score> Scores;
+        private List<UsserxScore> _usersxScore;
         public Menu()
         {
             InitializeComponent();
@@ -27,26 +27,26 @@ namespace Arkanoid
         }
         private void Menu_Load(object sender, EventArgs e)
         {
-            Puntuaciones = PuntuacionDAO.getLista();
-            _usuariosxPuntajes = PuntuacionDAO.getTop(Puntuaciones);
+            Scores = ScoreDAO.getLista();
+            _usersxScore = ScoreDAO.getTop(Scores);
         }
 
         private void buttonPlay_Click(object sender, EventArgs e)
         {
-            Game ventana = new Game();
-            ventana.ShowDialog();
+            Game windowgame = new Game();
+            windowgame.ShowDialog();
         }
 
         private void buttonScore_Click(object sender, EventArgs e)
         {
-            ScoreUsers ventana = new ScoreUsers();
-            ventana.CloseAction = () =>
+            ScoreUsers window = new ScoreUsers();
+            window.CloseAction = () =>
             {
                 Show(); 
                 
             };
             
-            ventana.ShowDialog();
+            window.ShowDialog();
             //Hide();
         }
 

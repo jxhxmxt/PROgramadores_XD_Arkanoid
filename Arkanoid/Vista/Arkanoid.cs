@@ -24,9 +24,9 @@ namespace Arkanoid
         private readonly ActionsBall MovementBall;
 
         //Usuario jugando
-        private Usuario unUsuario;
+        private User anUser;
 
-        public Arkanoid(Usuario usu)
+        public Arkanoid(User USU)
         {
             InitializeComponent();
 
@@ -34,7 +34,7 @@ namespace Arkanoid
             MovementBall += MoveBall;
 
             //asignando usuario a variable global
-            unUsuario = UsuarioDAO.GetPlayer(usu);
+            anUser = UserDAO.GetPlayer(USU);
         }
 
         protected override CreateParams CreateParams
@@ -445,7 +445,7 @@ namespace Arkanoid
 
         private void SaveScore()
         {
-            PuntuacionDAO.addPuntuacion(unUsuario.Id_u, DataGame.score);
+            ScoreDAO.AddScore(anUser.Id_u, DataGame.score);
         }
     }
 }

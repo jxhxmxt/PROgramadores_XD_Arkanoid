@@ -31,8 +31,7 @@ namespace Arkanoid
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources =
-                new System.ComponentModel.ComponentResourceManager(typeof(Game));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.label1 = new System.Windows.Forms.Label();
             this.txbUsu = new CustomTextBox();
             this.SuspendLayout();
@@ -41,12 +40,11 @@ namespace Arkanoid
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(955, 185);
+            this.label1.Size = new System.Drawing.Size(955, 148);
             this.label1.TabIndex = 0;
             this.label1.Text = "USUARIO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -55,11 +53,9 @@ namespace Arkanoid
             // 
             this.txbUsu.BackColor = System.Drawing.Color.Transparent;
             this.txbUsu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.txbUsu.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold,
-                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.txbUsu.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
             this.txbUsu.ForeColor = System.Drawing.Color.Transparent;
-            this.txbUsu.Location = new System.Drawing.Point(0, 185);
-            this.txbUsu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txbUsu.Location = new System.Drawing.Point(0, 148);
             this.txbUsu.Name = "txbUsu";
             this.txbUsu.Size = new System.Drawing.Size(955, 61);
             this.txbUsu.TabIndex = 2;
@@ -68,14 +64,14 @@ namespace Arkanoid
             // 
             // Game
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(955, 534);
+            this.ClientSize = new System.Drawing.Size(955, 427);
             this.Controls.Add(this.txbUsu);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon) (resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.MaximizeBox = false;
             this.Name = "Game";
             this.Text = "Game";
@@ -84,9 +80,9 @@ namespace Arkanoid
             this.PerformLayout();
         }
 
-        #endregion
-
         private System.Windows.Forms.Label label1;
         private CustomTextBox txbUsu;
+
+        #endregion
     }
 }
