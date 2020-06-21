@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Data;
 
 namespace Arkanoid.Modelo
@@ -7,6 +6,7 @@ namespace Arkanoid.Modelo
     public class UserDAO
     {
 
+        //verifica si existe el jugador
         public static bool ExistPlayer(User user)
         {
             string sql = String.Format("select * from usuario where nombre = '{0}';", user.Name);
@@ -18,6 +18,8 @@ namespace Arkanoid.Modelo
             
             return false;
         }
+        
+        //devuelve lesta de jugadores registrados
         public static User GetPlayer(User usu)
         {
             string sql = String.Format("select * from usuario where nombre = '{0}';", usu.Name);
@@ -34,6 +36,7 @@ namespace Arkanoid.Modelo
             return user_;
         }
 
+        //añade un nuevo jugador a la base
         public static void AddPlayer(User u)
         {
             string sql = String.Format("insert into usuario(nombre) values('{0}');",

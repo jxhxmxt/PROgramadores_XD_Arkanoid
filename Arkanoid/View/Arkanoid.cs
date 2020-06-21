@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using Arkanoid.Controlador;
@@ -32,9 +31,8 @@ namespace Arkanoid
 
             MovementBall = CollisionsBall;
             MovementBall += MoveBall;
-
-            //asignando usuario a variable global
-            anUser = UserDAO.GetPlayer(USU);
+            
+            anUser = USU;
         }
 
         protected override CreateParams CreateParams
@@ -443,6 +441,7 @@ namespace Arkanoid
             }
         }
 
+        //se va a guardar el puntaje del jugador
         private void SaveScore()
         {
             ScoreDAO.AddScore(anUser.Id_u, DataGame.score);

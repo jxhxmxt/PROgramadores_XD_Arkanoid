@@ -2,7 +2,7 @@
 
 namespace Arkanoid
 {
-    partial class CustomTextBox
+    partial class Arkanoid
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,15 +31,29 @@ namespace Arkanoid
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.Timer1Game = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // CustomTextBox
+            // Timer1Game
             // 
-            this.Name = "CustomTextBox";
-            this.Size = new System.Drawing.Size(175, 173);
+            this.Timer1Game.Tick += new System.EventHandler(this.Timer1Game_Tick);
+            // 
+            // Arkanoid
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Margin = new System.Windows.Forms.Padding(2, 4, 2, 4);
+            this.Name = "Arkanoid";
+            this.Size = new System.Drawing.Size(807, 444);
+            this.Load += new System.EventHandler(this.Arkanoid_Load);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Arkanoid_MouseClick);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Arkanoid_MouseMove);
             this.ResumeLayout(false);
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer Timer1Game;
     }
 }
