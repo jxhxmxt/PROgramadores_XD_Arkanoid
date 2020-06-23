@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Arkanoid
+﻿namespace Arkanoid
 {
     public static class DataGame
     {

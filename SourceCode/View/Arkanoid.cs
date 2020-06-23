@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Drawing;
+using System.Media;
 using System.Windows.Forms;
 using Arkanoid.Controlador;
 using Arkanoid.Modelo;
@@ -13,6 +14,10 @@ namespace Arkanoid
         private Panel score;
         private Label lblRemainingLives, lblScore;
         
+        //sonidos
+        private SoundPlayer StartGameSound, LoseLiveSound; 
+        private SoundPlayer CollisionPlayerSound, CollisionBlocksSound;
+
         // Para trabajar con picicturebox + label
         private PictureBox heart;
 
@@ -28,7 +33,9 @@ namespace Arkanoid
         public Arkanoid(User USU)
         {
             InitializeComponent();
-
+            //se inicializan los sonidos
+            InitializeSounds();
+            
             MovementBall = CollisionsBall;
             MovementBall += MoveBall;
             
@@ -50,7 +57,7 @@ namespace Arkanoid
             BackColor = Color.Transparent;
             
             ScorePanel();
-            
+
             //picturebox de la plataforma del jugador
             player = new PictureBox();
             player.Width = 150;
@@ -74,6 +81,8 @@ namespace Arkanoid
             Controls.Add(player);
 
             LoadBloks();
+            
+            StartGameSound.Play();
         }
         
         private void LoadBloks()
@@ -163,6 +172,8 @@ namespace Arkanoid
         {
             if (ball.Bottom > Height)
             {
+                LoseLiveSound.Play();
+                
                 DataGame.lives--;
                 DataGame.startGame = false;
                 Timer1Game.Stop();
@@ -195,18 +206,30 @@ namespace Arkanoid
 
             //colision con laterales de la pantalla
             if (ball.Left < 0 || ball.Right > Width)
+            {
+                CollisionPlayerSound.Play();
+                
                 DataGame.dirX = -DataGame.dirX;
+            }
+                
  
             //colision con la parte Top de la pantalla
             if (ball.Top < score.Top + score.Height)
             {
+                CollisionPlayerSound.Play();
+                
                 DataGame.dirY = -DataGame.dirY;
                 return;
             }
 
             //colision con la plataforma
             if (ball.Bounds.IntersectsWith(player.Bounds))
+            {
+                CollisionPlayerSound.Play();
+                
                 DataGame.dirY = -DataGame.dirY;
+            }
+                
             
 
             for (int i = 3; i >= 0; i--)
@@ -216,6 +239,9 @@ namespace Arkanoid
                     //colision con los bloques
                     if (BlocksGame[i, j] != null && ball.Bounds.IntersectsWith(BlocksGame[i, j].Bounds))
                     {
+                        //sonido de choque con los bloques
+                        CollisionBlocksSound.Play();
+                        
                         //se hace el calculo de los puntos
                         DataGame.score += (BlocksGame[i, j].hits * (5 - i));
                         
@@ -446,5 +472,23 @@ namespace Arkanoid
         {
             ScoreDAO.AddScore(anUser.Id_u, DataGame.score);
         }
+        
+        //se inicializan los sonidos
+        private void InitializeSounds()
+        {
+            try
+            {
+                StartGameSound = new SoundPlayer("../../../Sounds/Start.wav");
+                LoseLiveSound = new SoundPlayer("../../../Sounds/Lose.wav");
+                CollisionPlayerSound = new SoundPlayer("../../../Sounds/collision.wav");
+                CollisionBlocksSound = new SoundPlayer("../../../Sounds/DestroyBlock.wav");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Ha ocurrido un error al intentar cargar los sonidos!");
+            }
+            
+        }
+
     }
 }
