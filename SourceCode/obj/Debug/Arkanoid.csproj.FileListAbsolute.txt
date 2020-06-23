@@ -188,3 +188,39 @@ C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\S
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.csproj.CopyComplete
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.exe
 C:\Users\Zair Alexander Ortíz\Desktop\Workspace\POO\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.pdb
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\Arkanoid.exe.config
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\Arkanoid.pdb
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\Npgsql.dll
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Buffers.dll
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Memory.dll
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Text.Json.dll
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.ValueTuple.dll
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\Npgsql.pdb
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\Npgsql.xml
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Buffers.xml
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Memory.xml
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Text.Json.xml
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\bin\Debug\System.ValueTuple.xml
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.csprojAssemblyReference.cache
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.exe.config
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.Properties.Resources.resources
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.Arkanoid.resources
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.Menu.resources
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.Game.resources
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.Nickname.resources
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.ScoreUsers.resources
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.csproj.GenerateResource.cache
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.csproj.CoreCompileInputs.cache
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.csproj.CopyComplete
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.exe
+C:\Users\Stanley\Documents\githubb\prueba proyecto\PROgramadores_XD_Arkanoid\SourceCode\obj\Debug\Arkanoid.pdb
