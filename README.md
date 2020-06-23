@@ -3,7 +3,8 @@ PROgramadores_XD_Arkanoid
 
 Integrantes
 -----------
-Josué Humberto Montecinos Torres 00103013 /n
+Josué Humberto Montecinos Torres 00103013 
+
 Stanley Alexander Hurtado Bonilla 00016716
 Mario Orlando Moisa Candray 00135115
 Zair Alexander Ortiz Flores 00355519
