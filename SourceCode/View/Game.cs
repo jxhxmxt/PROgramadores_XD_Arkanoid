@@ -44,16 +44,6 @@ namespace Arkanoid
             Controls.Add(gameArkanoid); 
         }
 
-        private void Game_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Realmente desea salir?", "Arkanoid-Game",
-                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            
-            if(result == DialogResult.No)
-            {
-                // En caso NO se desee salir, entonces se cancelara el evento "cerrar formulario"
-                e.Cancel = true;
-            }
-        }
+        
     }
 }

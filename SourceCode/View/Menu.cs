@@ -46,7 +46,15 @@ namespace Arkanoid
 
         private void buttonOut_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult result = MessageBox.Show("Realmente desea salir?", "Arkanoid-Game",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            
+            if(result == DialogResult.Yes)
+            {
+               Application.Exit();
+            }
+            
+            
         }
     }
 }
